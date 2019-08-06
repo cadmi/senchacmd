@@ -1,11 +1,11 @@
 FROM openjdk:8-jre
 LABEL maintainer "Dmitry Ishutkin <cadmi@cadmi.ru>"
 
-ENV VERSION=6.7.0.64
+ENV VERSION=6.7.0.78
 
 # http://cdn.sencha.com/cmd/$VERSION/no-jre/SenchaCmd-$VERSION-linux-amd64.sh.zip && \
 
-RUN curl -o /cmd.run.zip http://home.cadmi.ru/cmd-6.7.0.64-linux-64-no_jre-20190313.zip && \
+RUN curl -o /cmd.run.zip http://home.cadmi.ru/cmd-6.7.0.78-linux-64-no_jre-20190802.zip && \
     unzip -p /cmd.run.zip > /cmd-install.run && \
     chmod +x /cmd-install.run && \
     /cmd-install.run -q -Dall=true -dir /opt/Sencha/Cmd/$VERSION && \

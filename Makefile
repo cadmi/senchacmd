@@ -1,5 +1,5 @@
 IMAGE=cadmi/senchacmd
-VERSION=6.7.0.64
+VERSION=6.7.0.78
 
 build: Dockerfile
 	docker build -t $(IMAGE):$(VERSION) .
